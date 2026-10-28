@@ -1,0 +1,157 @@
+============================================================
+ MARKET BASKET ANALYSIS: APRIORI AND FP-GROWTH
+============================================================
+Transactions loaded: 12
+Products found: Beer, Bread, Butter, Diapers, Eggs, Milk
+Minimum support: 25%
+Minimum confidence: 60%
+
+--- APRIORI: FREQUENT ITEMSETS ---
+Itemset                                          Support
+----------------------------------------------------------
+Beer                                              50.0%
+Bread                                             91.7%
+Butter                                            33.3%
+Diapers                                           58.3%
+Milk                                              83.3%
+Beer, Bread                                       41.7%
+Beer, Diapers                                     50.0%
+Beer, Milk                                        41.7%
+Bread, Butter                                     33.3%
+Bread, Diapers                                    50.0%
+Bread, Milk                                       75.0%
+Butter, Milk                                      25.0%
+Diapers, Milk                                     50.0%
+Beer, Bread, Diapers                              41.7%
+Beer, Bread, Milk                                 33.3%
+Beer, Diapers, Milk                               41.7%
+Bread, Butter, Milk                               25.0%
+Bread, Diapers, Milk                              41.7%
+Beer, Bread, Diapers, Milk                        33.3%
+
+--- APRIORI: ASSOCIATION RULES ---
+Rule                                          Support  Confidence    Lift
+---------------------------------------------------------------------------
+Beer -> Diapers                                50.0%     100.0%    1.71
+Beer, Bread -> Diapers                         41.7%     100.0%    1.71
+Beer, Bread, Milk -> Diapers                   33.3%     100.0%    1.71
+Beer, Milk -> Diapers                          41.7%     100.0%    1.71
+Butter -> Bread                                33.3%     100.0%    1.09
+Butter, Milk -> Bread                          25.0%     100.0%    1.09
+Milk -> Bread                                  75.0%      90.0%    0.98
+Diapers -> Beer                                50.0%      85.7%    1.71
+Diapers -> Milk                                50.0%      85.7%    1.03
+Diapers -> Bread                               50.0%      85.7%    0.94
+Beer -> Bread, Diapers                         41.7%      83.3%    1.67
+Beer -> Diapers, Milk                          41.7%      83.3%    1.67
+Bread, Diapers -> Beer                         41.7%      83.3%    1.67
+Diapers, Milk -> Beer                          41.7%      83.3%    1.67
+Beer -> Milk                                   41.7%      83.3%    1.00
+Beer, Diapers -> Milk                          41.7%      83.3%    1.00
+Bread, Diapers -> Milk                         41.7%      83.3%    1.00
+Beer -> Bread                                  41.7%      83.3%    0.91
+Beer, Diapers -> Bread                         41.7%      83.3%    0.91
+Diapers, Milk -> Bread                         41.7%      83.3%    0.91
+Bread -> Milk                                  75.0%      81.8%    0.98
+Beer, Bread -> Diapers, Milk                   33.3%      80.0%    1.60
+Beer, Milk -> Bread, Diapers                   33.3%      80.0%    1.60
+Bread, Diapers, Milk -> Beer                   33.3%      80.0%    1.60
+Beer, Bread -> Milk                            33.3%      80.0%    0.96
+Beer, Bread, Diapers -> Milk                   33.3%      80.0%    0.96
+Beer, Diapers, Milk -> Bread                   33.3%      80.0%    0.87
+Beer, Milk -> Bread                            33.3%      80.0%    0.87
+Butter -> Bread, Milk                          25.0%      75.0%    1.00
+Bread, Butter -> Milk                          25.0%      75.0%    0.90
+Butter -> Milk                                 25.0%      75.0%    0.90
+Diapers -> Beer, Bread                         41.7%      71.4%    1.71
+Diapers -> Beer, Milk                          41.7%      71.4%    1.71
+Diapers -> Bread, Milk                         41.7%      71.4%    0.95
+Beer -> Bread, Diapers, Milk                   33.3%      66.7%    1.60
+Bread, Diapers -> Beer, Milk                   33.3%      66.7%    1.60
+Diapers, Milk -> Beer, Bread                   33.3%      66.7%    1.60
+Beer -> Bread, Milk                            33.3%      66.7%    0.89
+Beer, Diapers -> Bread, Milk                   33.3%      66.7%    0.89
+Milk -> Diapers                                50.0%      60.0%    1.03
+
+--- FP-GROWTH: FREQUENT ITEMSETS ---
+Itemset                                          Support
+----------------------------------------------------------
+Beer                                              50.0%
+Bread                                             91.7%
+Butter                                            33.3%
+Diapers                                           58.3%
+Milk                                              83.3%
+Beer, Bread                                       41.7%
+Beer, Diapers                                     50.0%
+Beer, Milk                                        41.7%
+Bread, Butter                                     33.3%
+Bread, Diapers                                    50.0%
+Bread, Milk                                       75.0%
+Butter, Milk                                      25.0%
+Diapers, Milk                                     50.0%
+Beer, Bread, Diapers                              41.7%
+Beer, Bread, Milk                                 33.3%
+Beer, Diapers, Milk                               41.7%
+Bread, Butter, Milk                               25.0%
+Bread, Diapers, Milk                              41.7%
+Beer, Bread, Diapers, Milk                        33.3%
+
+--- FP-GROWTH: ASSOCIATION RULES ---
+Rule                                          Support  Confidence    Lift
+---------------------------------------------------------------------------
+Beer -> Diapers                                50.0%     100.0%    1.71
+Beer, Bread -> Diapers                         41.7%     100.0%    1.71
+Beer, Bread, Milk -> Diapers                   33.3%     100.0%    1.71
+Beer, Milk -> Diapers                          41.7%     100.0%    1.71
+Butter -> Bread                                33.3%     100.0%    1.09
+Butter, Milk -> Bread                          25.0%     100.0%    1.09
+Milk -> Bread                                  75.0%      90.0%    0.98
+Diapers -> Beer                                50.0%      85.7%    1.71
+Diapers -> Milk                                50.0%      85.7%    1.03
+Diapers -> Bread                               50.0%      85.7%    0.94
+Beer -> Bread, Diapers                         41.7%      83.3%    1.67
+Beer -> Diapers, Milk                          41.7%      83.3%    1.67
+Bread, Diapers -> Beer                         41.7%      83.3%    1.67
+Diapers, Milk -> Beer                          41.7%      83.3%    1.67
+Beer -> Milk                                   41.7%      83.3%    1.00
+Beer, Diapers -> Milk                          41.7%      83.3%    1.00
+Bread, Diapers -> Milk                         41.7%      83.3%    1.00
+Beer -> Bread                                  41.7%      83.3%    0.91
+Beer, Diapers -> Bread                         41.7%      83.3%    0.91
+Diapers, Milk -> Bread                         41.7%      83.3%    0.91
+Bread -> Milk                                  75.0%      81.8%    0.98
+Beer, Bread -> Diapers, Milk                   33.3%      80.0%    1.60
+Beer, Milk -> Bread, Diapers                   33.3%      80.0%    1.60
+Bread, Diapers, Milk -> Beer                   33.3%      80.0%    1.60
+Beer, Bread -> Milk                            33.3%      80.0%    0.96
+Beer, Bread, Diapers -> Milk                   33.3%      80.0%    0.96
+Beer, Diapers, Milk -> Bread                   33.3%      80.0%    0.87
+Beer, Milk -> Bread                            33.3%      80.0%    0.87
+Butter -> Bread, Milk                          25.0%      75.0%    1.00
+Bread, Butter -> Milk                          25.0%      75.0%    0.90
+Butter -> Milk                                 25.0%      75.0%    0.90
+Diapers -> Beer, Bread                         41.7%      71.4%    1.71
+Diapers -> Beer, Milk                          41.7%      71.4%    1.71
+Diapers -> Bread, Milk                         41.7%      71.4%    0.95
+Beer -> Bread, Diapers, Milk                   33.3%      66.7%    1.60
+Bread, Diapers -> Beer, Milk                   33.3%      66.7%    1.60
+Diapers, Milk -> Beer, Bread                   33.3%      66.7%    1.60
+Beer -> Bread, Milk                            33.3%      66.7%    0.89
+Beer, Diapers -> Bread, Milk                   33.3%      66.7%    0.89
+Milk -> Diapers                                50.0%      60.0%    1.03
+
+--- COMPARISON ---
+Both algorithms found the same frequent itemsets.
+Apriori checks candidate itemsets. FP-Growth builds and mines an FP-tree.
+
+Tip: Change MIN_SUPPORT or MIN_CONFIDENCE at the top to explore results.
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 718, in _warm_feature_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/spreadsheet_warmup.py", line 509, in _warm_drawing_and_image_flows
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/generated/interface/models.py", line 32861, in bring_to_front
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/remote.py", line 764, in __call__
+  File "/tmp/tmp.QlpUkOUI9D/artifact_tool_v2-2.8.66/artifact_tool/rpc/client.py", line 175, in call
+artifact_tool.rpc.client.RemoteError: Element ordering requires an owning element collection.

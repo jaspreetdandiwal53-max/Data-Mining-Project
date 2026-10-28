@@ -1,0 +1,13 @@
+TransactionID,Items
+T001,"Bread, Milk, Butter"
+T002,"Bread, Diapers, Beer, Eggs"
+T003,"Milk, Bread, Diapers, Beer"
+T004,"Bread, Milk, Diapers, Beer"
+T005,"Bread, Milk, Butter"
+T006,"Milk, Diapers, Beer"
+T007,"Bread, Milk, Diapers"
+T008,"Bread, Butter"
+T009,"Milk, Bread, Diapers, Beer"
+T010,"Bread, Milk, Butter"
+T011,"Eggs, Milk, Bread"
+T012,"Bread, Milk, Diapers, Beer"
